@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gulp Roast Coffee - Our Products</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header with responsive navigation -->
+    <header class="bg-primary border-bottom border-secondary border-5 mb-5">
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <div class="container">
+                <!--  logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="https://assets.codepen.io/6306176/gulp-logo-light.png" alt="Gulp Roast Coffee Logo" class="logo-image">
+                </a>
+                <!-- Responsive toggle button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Navigation links -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://uxuicurriculum.wixsite.com/gulproast">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://uxuicurriculum.wixsite.com/gulproast">Locations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://uxuicurriculum.wixsite.com/gulproast">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Coffee</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://uxuicurriculum.wixsite.com/gulproast">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1 class="text-center mb-5">Our Coffee Products</h1>
+        
+        <!-- Product cards -->
+        <div class="row">
+            <!-- Columbian-Blended Espresso Beans -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="https://assets.codepen.io/6306176/gulp-espresso.jpg" class="card-img-top" alt="Columbian-Blended Espresso Beans">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Columbian-Blended Espresso Beans</h5>
+                        <p class="card-text">Bright and clean with an intense burst of flavor, these full-bodied beans strike a perfect balance between the most delicate roasts and fruitful aromas.</p>
+                        <a href="product.html" class="btn btn-primary mt-auto">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Triple-Blended Coffee Beans -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="https://assets.codepen.io/6306176/gulp-triple-blended.jpg" class="card-img-top" alt="Triple-Blended Coffee Beans">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Triple-Blended Coffee Beans</h5>
+                        <p class="card-text">Skillfully roasted and carefully blended, our Triple-Blended Coffee Beans pack a lasting punch with silky smoothness and layered flavors.</p>
+                        <a href="https://uxuicurriculum.wixsite.com/gulproast" class="btn btn-primary mt-auto">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Lightly Roasted Coffee Beans -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="https://assets.codepen.io/6306176/gulp-light-roast.jpg" class="card-img-top" alt="Lightly Roasted Coffee Beans">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Lightly Roasted Coffee Beans</h5>
+                        <p class="card-text">Our Lightly Roasted Coffee Beans offer the perfect balance between bold flavor and subtle sweetness, brightening your day with inspiration.</p>
+                        <a href="https://uxuicurriculum.wixsite.com/gulproast" class="btn btn-primary mt-auto">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- New Bootstrap element: Accordion for FAQ -->
+        <div class="accordion mt-5" id="coffeeAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        How should I store my coffee?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#coffeeAccordion">
+                    <div class="accordion-body">
+                        Store your coffee in an airtight container in a cool, dark place. Avoid refrigerating or freezing your coffee as it can absorb moisture and odors.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        How long does coffee stay fresh?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#coffeeAccordion">
+                    <div class="accordion-body">
+                        Whole beans can stay fresh for up to a month if stored properly. Ground coffee should be used within two weeks for the best flavor.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-secondary border-top border-5 text-center py-5 mt-5 bg-primary text-white">
+        <div class="container-sm">
+            <p>&copy;2022 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.</p>
+            <p><small>This site is operated by Trilogy Education Services for educational purposes only. This is not a coffee products website. This is a fictitious company and scenario intended only for internal academic purposes.</small></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
